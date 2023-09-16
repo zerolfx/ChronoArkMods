@@ -41,9 +41,16 @@ namespace NoIdentification
         [HarmonyPatch(typeof(Item_Scroll), "IsIdentify", MethodType.Getter)]
         [HarmonyPatch(typeof(Item_Potions), "IsIdentify", MethodType.Getter)]
         [HarmonyPatch(typeof(Item_Equip), "IsIdentify", MethodType.Getter)]
-        private static void PatchIsIdentify(ref bool __result)
+        private static void Patch1(ref bool __result)
         {
             __result = true;
+        }
+
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(Item_Equip), nameof(Item_Equip.ToolTip))]
+        private static void Patch2(Item_Equip __instance)
+        {
+            __instance._Isidentify = true;
         }
     }
 }

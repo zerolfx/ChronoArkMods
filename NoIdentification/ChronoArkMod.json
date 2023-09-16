@@ -1,21 +1,25 @@
-﻿{
-  "id": "NoIdentification",
-  "Title": "No Identification",
-  "Author": "zerol",
-  "Description": "No longer need to identify items.",
-  "Version": "1.0.0",
-  "Cover": "icon.png",
-  "ModSettingEntries": [],
-  "DefaultAssetBundlePath": "",
-  "Dependencies": [],
-  "NeedRestartWhenSettingChanged": false,
-  "NeedReloadAllWhenEnabled": false,
-  "NeedRestartWhenEnabled": false,
-  "Uploader": "zerol",
-  "TagList": [
-    "QualityOfLife"
-  ],
-  "Visibility": "Public",
-  "ChangeNote": "",
-  "WorkShopId": ""
+{
+    "id": "NoIdentification",
+    "Title": "No Identification 无需鉴定",
+    "Author": "zerol",
+    "Description": "No longer need to identify items. 无需鉴定物品。",
+    "Version": "1.0.1",
+    "Cover": "cover.png",
+    "ModSettingEntries": [
+        
+    ],
+    "DefaultAssetBundlePath": "",
+    "Dependencies": [
+        
+    ],
+    "NeedRestartWhenSettingChanged": false,
+    "NeedReloadAllWhenEnabled": false,
+    "NeedRestartWhenEnabled": false,
+    "Uploader": "zerol",
+    "TagList": [
+        "GamePlay"
+    ],
+    "Visibility": "Public",
+    "ChangeNote": "",
+    "WorkShopId": "3036298049"
 }
