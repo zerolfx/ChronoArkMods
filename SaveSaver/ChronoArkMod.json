@@ -1,0 +1,23 @@
+{
+  "id": "SaveSaver",
+  "Title": "Another SL MOD",
+  "Author": "zerol",
+  "Description": "Keep your progress when you force quit the game, even if you are in the middle of a battle.\n强制退出游戏后仍保留进度，即使是在战斗中退出。",
+  "Version": "1.0.0",
+  "Cover": "",
+  "ModSettingEntries": [
+  ],
+  "DefaultAssetBundlePath": "",
+  "Dependencies": [
+  ],
+  "NeedRestartWhenSettingChanged": false,
+  "NeedReloadAllWhenEnabled": false,
+  "NeedRestartWhenEnabled": false,
+  "Uploader": "zerol",
+  "TagList": [
+    "GamePlay"
+  ],
+  "Visibility": "FriendsOnly",
+  "ChangeNote": "",
+  "WorkShopId": ""
+}

@@ -1,0 +1,43 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+    <PropertyGroup>
+        <TargetFramework>net40</TargetFramework>
+        <AssemblyName>SaveSaver</AssemblyName>
+    </PropertyGroup>
+
+    <PropertyGroup>
+        <GameFolder>C:\Program Files (x86)\Steam\steamapps\common\Chrono Ark</GameFolder>
+    </PropertyGroup>
+
+    <ItemGroup>
+        <PackageReference Include="HarmonyX" Version="2.10.2" />
+    </ItemGroup>
+
+    <ItemGroup>
+        <Reference Include="Assembly-CSharp">
+            <Private>false</Private>
+            <HintPath>$(GameFolder)\ChronoArk_Data\Managed\Assembly-CSharp.dll</HintPath>
+        </Reference>
+        <Reference Include="Assembly-CSharp-firstpass">
+            <Private>false</Private>
+            <HintPath>$(GameFolder)\ChronoArk_Data\Managed\Assembly-CSharp-firstpass.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.CoreModule">
+            <Private>false</Private>
+            <HintPath>$(GameFolder)\ChronoArk_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine">
+            <Private>false</Private>
+            <HintPath>$(GameFolder)\ChronoArk_Data\Managed\UnityEngine.dll</HintPath>
+        </Reference>
+        <Reference Include="UnityEngine.UI">
+            <Private>false</Private>
+            <HintPath>$(GameFolder)\ChronoArk_Data\Managed\UnityEngine.UI.dll</HintPath>
+        </Reference>
+        <Reference Include="netstandard">
+            <Private>false</Private>
+            <HintPath>$(GameFolder)\ChronoArk_Data\Managed\netstandard.dll</HintPath>
+        </Reference>
+    </ItemGroup>
+
+</Project>
