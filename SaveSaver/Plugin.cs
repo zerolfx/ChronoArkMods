@@ -41,6 +41,16 @@ namespace SaveSaver
     [HarmonyDebug]
     public class Patch
     {
+        [HarmonyPrefix]
+        [HarmonyPatch(typeof(FieldSystem), nameof(FieldSystem.BattleStart))]
+        private static void AutoSave()
+        {
+            HarmonyFileLog.Writer.WriteLine("SaveSaver: Save progress before battle");
+            HarmonyFileLog.Writer.Flush();
+            SaveManager.savemanager.ProgressOneSave();
+        }
+
+
         [HarmonyTranspiler]
         [HarmonyPatch(typeof(SaveManager), nameof(SaveManager.QuitSave))]
         private static IEnumerable<CodeInstruction> QuitSaveTranspiler(IEnumerable<CodeInstruction> instructions)
@@ -64,11 +74,8 @@ namespace SaveSaver
                 throw new Exception("SaveSaver: failed to patch SaveManager.QuitSave");
             }
 
-            var newLabel = new Label();
-
-            codes[idx].labels.Add(newLabel);
-            codes[idx + 3].opcode = OpCodes.Br;
-            codes[idx + 3].operand = newLabel;
+            codes[idx + 3].opcode = OpCodes.Ret;
+            codes[idx + 3].operand = null;
             for (var i = idx + 4; i < codes.Count - 1; i++)
             {
                 codes[i].opcode = OpCodes.Nop;
