@@ -43,6 +43,7 @@ namespace SaveSaver
     {
         [HarmonyPrefix]
         [HarmonyPatch(typeof(FieldSystem), nameof(FieldSystem.BattleStart))]
+        [HarmonyPatch(typeof(FieldSystem), nameof(FieldSystem.BattleStart_MapEnemy))]
         private static void AutoSave()
         {
             HarmonyFileLog.Writer.WriteLine("SaveSaver: Save progress before battle");
