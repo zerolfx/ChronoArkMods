@@ -17,7 +17,7 @@
   "TagList": [
     "GamePlay"
   ],
-  "Visibility": "FriendsOnly",
+  "Visibility": "Public",
   "ChangeNote": "1.0.3: Fix checkpoint overwrites during battle transitions and chained battles; fix Trial of Strength fees, Sword Sanctuary retries, and Shiranui/Casino event recovery; preserve Hope Mode recovery and remove the Harmony file logging dependency.\n1.0.3：修复开战过渡和连战覆盖存档、力量试炼重复扣费、剑之圣域及不知火/赌场事件无法正常重试的问题；保留希望模式恢复存档，移除对 Harmony 文件日志的依赖。",
   "WorkShopId": "3037034466"
 }
