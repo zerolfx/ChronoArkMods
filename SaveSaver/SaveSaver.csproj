@@ -3,6 +3,7 @@
     <PropertyGroup>
         <TargetFramework>net40</TargetFramework>
         <AssemblyName>SaveSaver</AssemblyName>
+        <Version>1.0.3</Version>
     </PropertyGroup>
 
     <PropertyGroup>

@@ -2,8 +2,8 @@
   "id": "SaveSaver",
   "Title": "Another SL MOD",
   "Author": "zerol",
-  "Description": "Keep your progress when you force quit the game, even if you are in the middle of a battle.\n强制退出游戏后仍保留进度，即使是在战斗中退出。",
-  "Version": "1.0.2",
+  "Description": "Save before expedition battles and keep that checkpoint when quitting during battle or its loading transition. Continuing returns you to before the battle, not the current turn. Story battles are excluded. A forced process kill can only recover the last completed save.\n在探索战斗前存档，战斗中或开战过渡期间退出时保留该检查点。继续游戏将回到战斗前，不会恢复战斗中的回合；不对剧情战斗额外存档。强制结束进程只能恢复到最后一次已完成的存档。\n\nChangelog - 1.0.3\n- Prevent battle transitions and repeated battle requests from overwriting checkpoints.\n- Save before the Trial of Strength entry fee and preserve the Sword Sanctuary boss encounter.\n- Keep Shiranui and Casino events available for retry, and prevent duplicated Casino entry gold after reloading.\n- Preserve the checkpoint before the first Bloody Mist boss throughout chained battles; retrying restarts both battles.\n- Preserve normal field saving and Hope Mode defeat recovery.\n- Remove the dependency on Harmony file logging and report checkpoint errors without interrupting combat.\n\n更新日志 - 1.0.3\n- 修复开战过渡和重复开战请求覆盖战前存档的问题。\n- 力量试炼在扣除入场费前存档，并保留剑之圣域特殊 Boss 的触发状态。\n- 修复不知火和赌场事件读档后无法重试的问题，避免赌场入场金币重复领取。\n- 血雾连战期间保留第一场 Boss 前的存档；读档后需重新挑战两场战斗。\n- 保留正常地图存档和希望模式战败后的恢复存档。\n- 移除对 Harmony 文件日志的依赖，存档异常会记录错误而不会阻断开战。",
+  "Version": "1.0.3",
   "Cover": "cover.png",
   "ModSettingEntries": [
   ],
@@ -18,6 +18,6 @@
     "GamePlay"
   ],
   "Visibility": "FriendsOnly",
-  "ChangeNote": "",
+  "ChangeNote": "1.0.3: Fix checkpoint overwrites during battle transitions and chained battles; fix Trial of Strength fees, Sword Sanctuary retries, and Shiranui/Casino event recovery; preserve Hope Mode recovery and remove the Harmony file logging dependency.\n1.0.3：修复开战过渡和连战覆盖存档、力量试炼重复扣费、剑之圣域及不知火/赌场事件无法正常重试的问题；保留希望模式恢复存档，移除对 Harmony 文件日志的依赖。",
   "WorkShopId": "3037034466"
 }

@@ -1,0 +1,15 @@
+<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net48</TargetFramework>
+    <AssemblyName>SaveSaver.Tests</AssemblyName>
+    <LangVersion>latest</LangVersion>
+    <RestoreConfigFile>$(MSBuildThisFileDirectory)..\SaveSaver\NuGet.Config</RestoreConfigFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="HarmonyX" Version="2.10.2" />
+    <Compile Include="../SaveSaver/Plugin.cs" Link="Plugin.cs" />
+    <Compile Include="../SaveSaver/Checkpoint.cs" Link="Checkpoint.cs" />
+    <Compile Include="../SaveSaver/EncounterPatches.cs" Link="EncounterPatches.cs" />
+  </ItemGroup>
+</Project>
